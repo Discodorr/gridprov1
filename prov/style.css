@@ -1,0 +1,45 @@
+.GridWrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgreen;
+    grid-template-areas: 
+    "he he he he"
+    "se se se as"
+    "se se se as"
+    "se se se as"
+    "fo fo fo fo";
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.header{
+    grid-area: he;
+    background: skyblue
+}
+.aside{
+    grid-area: as;
+    background: lightgreen
+}
+.innerGridWrapper {
+    grid-area: se;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    background: lightgreen
+}
+.footer{
+    grid-area: fo;
+    background: magenta
+}
+.section{
+    grid-area: se;
+    background: pink
+
+}
+.innerDiv{
+    background: pink
+}
